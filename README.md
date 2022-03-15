@@ -1,7 +1,7 @@
 
 ## Api Server configuration
 
-# N.B: I'm not familier with C#, that's why i'm creating a json ser to get and update data after resize rectangle.
+# N.B: I'm not familier with C#, that's why i'm creating a json server to get and update data after resize rectangle.
 
 Run `npm i -g json-server` to install json-server globally.
 Go to Json server folder by  `cd json-server-lib`
