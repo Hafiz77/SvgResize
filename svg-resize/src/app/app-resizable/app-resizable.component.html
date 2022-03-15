@@ -1,0 +1,12 @@
+<svg width="100%" height="100%" id="rectangle" #rectangle class="resizable-draggable">
+    <svg:rect [style.width.px]="width" [style.height.px]="height" class="resize-action"
+        [style.transform]="'translate3d('+ left + 'px,' + top + 'px,' + '0px)'" [style.fill]="'rgb(164, 245, 242)'"
+        [style.stroke-width]="stokeWidth" [style.stroke]="'rgb(0, 0, 0)'" [class.active]="status === 1 || status === 2"
+        (mousedown)="setStatus($event, 1)" (window:mouseup)="setStatus($event, 0)" />
+    
+    <text x="20" y="60" tabindex="-1">
+        Perimeter: {{width | number:'1.0-0'}}px X {{height | number:'1.0-0'}}px
+    </text>
+
+
+</svg>
